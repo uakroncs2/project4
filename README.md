@@ -56,9 +56,9 @@ struct Sorter {
 
 ## Rubric
 
- * [20%] Your program must compile and run on our knuth linux server. TEST THIS! IF IT DOESNT COMPILE YOU LOSE 20% OFF THE TOP!
+ * [20%] Your program must compile and run on our knuth linux server. TEST THIS! IF IT DOESNT COMPILE YOU LOSE 20% OFF THE TOP AND I CANT TEST FUNCTIONALITY!
 
- * [60%] Your program must correctly sort using each sorting method and the method muxt be implemented correctly
+ * [60%] Your program must correctly sort using each sorting method and the method must be implemented correctly
    * Bubble Sort [10%]
    * Insertion Sort [10%]
    * Merge Sort [20%]
