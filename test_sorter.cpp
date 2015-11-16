@@ -17,7 +17,7 @@ const std::vector<std::string> names = { "bubblesort", "insertionsort", "radixso
 void display(const std::vector<int>&);
 
 // run the set of tests for a specific sort
-void run_test(const int&, const std::vector<Sort>&, const std::vector<std::string>&, int&);
+void run_test(const int&, const std::vector<Sort>&, const std::vector<std::string>&);
 
 // used to check the order of the vectors
 bool check_order(const std::vector<int>&);
@@ -25,10 +25,10 @@ bool check_order(const std::vector<int>&);
 int main() {
 
   srand(10);
-  int passed = 0;
 
+  // run the tests for all sorts
   for (int i = 0; i < sorts.size(); ++i) 
-    run_test(i, sorts, names, passed);
+    run_test(i, sorts, names);
 
 }
 
@@ -40,7 +40,7 @@ void display(const std::vector<int>& v) {
 
 }
 
-void run_test(const int& test, const std::vector<Sort>& sorts, const std::vector<std::string>& names, int& passed) {
+void run_test(const int& test, const std::vector<Sort>& sorts, const std::vector<std::string>& names) {
 
   int top_limit = 9999;
   int count = 10;
@@ -58,13 +58,11 @@ void run_test(const int& test, const std::vector<Sort>& sorts, const std::vector
   std::cout << " - empty vector: ";
   std::vector<int> result = sorts[test](empty);
   bool temp = check_order(result);
-  passed += temp ? 1 : 0;
   std::cout << (temp ? "passed." : "failed.") << std::endl;
   
   std::cout << " - reverse vector: ";
   result = sorts[test](numbers);
   temp = check_order(result);
-  passed += temp ? 1 : 0;
   std::cout << (temp ? "passed." : "failed.") << std::endl;
   
   if (!temp) {
@@ -77,7 +75,6 @@ void run_test(const int& test, const std::vector<Sort>& sorts, const std::vector
   std::cout << " - random vector: ";
   result = sorts[test](random);
   temp = check_order(result);
-  passed += temp ? 1 : 0;
   std::cout << (temp ? "passed." : "failed.") << std::endl;
   
   if (!temp) {
