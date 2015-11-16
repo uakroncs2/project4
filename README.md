@@ -11,7 +11,7 @@ I have provided the header file for the Sorter struct, and you MUST implement al
 I will supply you with these files:
 
  * README.md - This file contains these instructions
- * Makefile - use 'make' on the linux system to compile the project using this makefile.  The binary file will be named 'sorting.out'.
+ * Makefile - use 'make' on the linux system to compile the project using this makefile.  The binary file will be named 'sorter.out'.
  * Sorter.hpp - This contains the header file for a Sorter object which contains static sorting functions for the following sorting algorithms:
    * Bubble Sort
    * Insertion Sort
