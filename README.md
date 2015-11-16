@@ -45,7 +45,7 @@ struct Sorter {
   // sort a vector using mergesort
   static std::vector<int> mergesort(const std::vector<int>&); 
 
-}
+};
 
 ```
 
