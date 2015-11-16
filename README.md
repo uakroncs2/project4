@@ -3,7 +3,7 @@
 
 With this project you will be sorting using various sorting methods!
 
-I have provided the header file for the Sprting class, and you MUST implement all neccesary functions.
+I have provided the header file for the Srrting struct, and you MUST implement all neccesary functions.
 
 
 ## Files
